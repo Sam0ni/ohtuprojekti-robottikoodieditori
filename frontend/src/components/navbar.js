@@ -35,19 +35,26 @@ const Navbar = () => {
             <h1>{translations.navbar}</h1>
             <div>
                 { username === "" ? (
-                    <div>
+                    <div className='lang-toggle-button-container'>
                         <button onClick={openPopup} className="lang-toggle-button"> {language == 'fi' ? "Kirjaudu" : "Login"}</button>
                         {isPopupOpen && (<Tokenpopup status={true} onClose={closePopup}/>)}
                     </div>
                 ) : (
-                    <div>
-                        <p>{language == 'fi' ? "Olet kirjautunut nimellä: " : "Logged in as: "}{username}</p>
-                        <button onClick={logOut} className="lang-toggle-button"> {language == 'fi' ? "Kirjaudu ulos" : "Log out"}</button>
-                    </div>
+                    <>
+                        <div className='logout'>
+                            <div className='username'> <p>{language == 'fi' ? "Olet kirjautunut nimellä: " : "Logged in as: "}{username}</p> </div>
+                            <div className="logout-button-container">
+                                <button onClick={logOut} className="logout-button">
+                                    {language === 'fi' ? 'Kirjaudu ulos' : 'Log out'}
+                                </button>
+                            </div>
+                        
+                        </div>
+                    </>
                 )
                 }
             </div>
-            <div className="navbar-button-container">
+            <div className="language-button-container">
                 <button onClick={toggleLanguage} className="lang-toggle-button" data-testid="toggleLanguageButton">
                     {language === 'fi' ? 'Switch to English' : 'Vaihda suomeksi'}
                 </button>

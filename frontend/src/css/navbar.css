@@ -1,39 +1,85 @@
 .navbar {
-    background-color: rgb(134, 176, 226);
-    color: white;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .navbar-button-container {
-    padding-right: 20px;
-  }
+  background-color: rgb(134, 176, 226);
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
 
-  .lang-toggle-button {
-    font-family: Verdana,  Arial, Helvetica, sans-serif;  
-    font-size: 14px;
-    font-weight: 450;
-    padding: 8px 16px; 
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    cursor: pointer;
-    outline: none;
-    background-color: rgb(47, 63, 133);
-    color: rgb(255, 255, 255);
-  }
-  
-  .lang-toggle-button:hover {
-    background-color: rgb(65, 81, 172);
-  }
-  
-  .lang-toggle-button:active {
-    transform: scale(0.97);
-  }
+.username {
+  color:rgb(0, 0, 0);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  display: flex;
+  padding-right: 20px;
+}
 
-  h1{
-    padding: 0 20px;
-  }
+.logout {
+  display: flex;
+}
+
+.language-button-container {
+  display: flex;
+  padding-right: 20px;
+}
+
+.lang-toggle-button-container {
+  display: flex;
+  padding-right: 20px;
+}
+
+.lang-toggle-button {
+  font-family: Verdana,  Arial, Helvetica, sans-serif;  
+  font-size: 14px;
+  font-weight: 450;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(47, 63, 133);
+  color: rgb(255, 255, 255);
+}
+
+.lang-toggle-button:hover {
+  background-color: rgb(65, 81, 172);
+}
+
+.lang-toggle-button:active {
+  transform: scale(0.97);
+}
+
+.logout-button-container {
+  padding-right: 20px;
+  padding-top: 9px;
+}
+
+.logout-button {
+  font-family: Verdana,  Arial, Helvetica, sans-serif;  
+  font-size: 14px;
+  font-weight: 450;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(47, 63, 133);
+  color: rgb(255, 255, 255);
+}
+
+.logout-button:hover {
+  background-color: rgb(65, 81, 172);
+}
+
+.logout-button:active {
+  transform: scale(0.97);
+}
+
+h1{
+  position: absolute;
+  left: 0;
+  padding: 0 20px;
+}
